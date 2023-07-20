@@ -8,7 +8,7 @@ const networkConfig = {
       },
 }
 
-const  developmentChains = ["localhost", "hardhart"]
+const  developmentChains = ["localhost", "hardhat"]
 const INITIAL_SUPPLY = "1000000000000000000000000"
 
 module.exports = {

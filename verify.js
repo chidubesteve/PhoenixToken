@@ -1,8 +1,9 @@
-import { run } from "hardhat";
+const { run } = require ("hardhat");
 const verify = async (constructorAddress, args) => {
   console.log("Verifying contract, please wait...");
   try {
     await run(`verify:verify`, {
+      contract: "contracts/MyToken.sol:MyToken",
       address: constructorAddress,
       constructorArguments: args,
     });

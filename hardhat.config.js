@@ -24,6 +24,9 @@ module.exports = {
       chainId: 11155111,
       blockConfirmations: 6
     },
+    localhost: {
+      chainId: 31337,
+    }
   },
   solidity: {
     compilers: [{ version: "0.8.9", }, { version: "0.8.7" }, { version: "0.8.4", }, { version: "0.6.6", }, { version: "0.6.0", settings: {}, }],
@@ -42,16 +45,20 @@ gasReporter: {
   coinmarketCap: COINMARKETCAP_API,
   // token: "MATIC",
 },
+// paths: {
+//   tests: "../test/smartcontract",
+// },
   namedAccounts: {
     deployer: {
       default: 0,
     },
-    player: {
+    user1: {
       default: 1,
     },
+
   },
   mocha: {
-    timeout: 300000, //300 secs
+    timeout: 200000, //300 secs
   }
 
 };
